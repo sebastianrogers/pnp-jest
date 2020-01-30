@@ -6,6 +6,8 @@ export async function getListItem(
 ): Promise<any> {
   return await sp.web.lists
     .getByTitle(listTitle)
-    .items.getById(itemId)
+    .items.select("*,CMSUser/Id,Editor/ID,Editor/Title")
+    .expand("Editor,CMSUser")
+    .getById(itemId)
     .get();
 }

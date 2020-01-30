@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-app",
+  "version": "1.0.0",
+  "description": "Sample nodejs app using PnPjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc -p . && node dist/index.js",
+    "test": "tsc -p . && node dist/index.js && jest"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@pnp/nodejs-commonjs": "^2.0.2-5",
+    "@pnp/sp-commonjs": "^2.0.2-5",
+    "@types/jest": "^25.1.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-typescript": "^7.8.3",
+    "babel-jest": "^25.1.0",
+    "jest": "^25.1.0",
+    "typescript": "^3.7.5"
+  }
+}

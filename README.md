@@ -4,6 +4,10 @@ Examples of how to unit test PnP via Jest
 
 Based on (<https://pnp.github.io/pnpjs/nodejs-support/)>.
 
+Shows how to set up VSCode Jest support to allow retesting of successful tests.
+
+Shows how to exclude tests so that expensive integration tests can become only run on demand.
+
 ## Getting Started
 
 Initialise the project.

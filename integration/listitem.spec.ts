@@ -1,6 +1,6 @@
 import { SPFetchClient } from "@pnp/nodejs-commonjs";
 import { sp } from "@pnp/sp-commonjs";
-import { getListItemWithAuthor } from "./listitem";
+import { getListItemWithAuthor } from "../listitem";
 
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();

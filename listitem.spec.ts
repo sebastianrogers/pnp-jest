@@ -1,6 +1,6 @@
 import { SPFetchClient } from "@pnp/nodejs-commonjs";
 import { sp } from "@pnp/sp-commonjs";
-import { getListItem } from "./listitem";
+import { getListItemWithAuthor } from "./listitem";
 
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
@@ -19,7 +19,10 @@ sp.setup({
   }
 });
 
-it("gets the default page", async () => {
-  const listItem = await getListItem("Pages", 1);
-  expect(listItem.ID).toBe(1);
+it("gets the default page with author information", async () => {
+  const itemId = 1;
+  const listItem = await getListItemWithAuthor("Pages", itemId);
+
+  expect(listItem.ID).toBe(itemId);
+  expect(listItem.Author.Id).toBeTruthy();
 });

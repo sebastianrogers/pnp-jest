@@ -1,18 +1,26 @@
 # pnp-jest
 
-Examples of how to unit test PnP via Jest
+Examples of how to unit test [PnPJS](https://pnp.github.io/pnpjs) via [Jest](https://jestjs.io/).
 
-Based on (<https://pnp.github.io/pnpjs/nodejs-support/)>.
+Shows how to:
 
-Shows how to set up VSCode Jest support to allow retesting of successful tests.
+- set up VSCode Jest support to allow retesting of successful tests.
+- exclude tests so that expensive integration tests can become only run on demand.
 
-Shows how to exclude tests so that expensive integration tests can become only run on demand.
+This was updated to use PnPJS V3 from an original that used [PnPJS V2](https://pnp.github.io/pnpjs/transition-guide/).
 
 ## Getting Started
 
+Ensure that you are using Node 14, 16, 18.
+
+```sh
+nvm install 18
+nvm use 18
+```
+
 Initialise the project.
 
-```bash
+```sh
 yarn
 ```
 
@@ -28,7 +36,7 @@ SP_CLIENT_SECRET=<SECRET>
 
 Test the project
 
-```bash
+```sh
 yarn test
 ```
 

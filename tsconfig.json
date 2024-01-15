@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "esModuleInterop": true,
-    "module": "commonjs",
+    "module": "ESNext",
     "target": "esnext",
     "moduleResolution": "node",
     "declaration": true,
@@ -10,5 +10,5 @@
     "sourceMap": true,
     "lib": ["dom", "esnext"]
   },
-  "files": ["./index.ts"]
+  "files": ["index.mts","__tests__/pnp/pnp.test.mts"]
 }

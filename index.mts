@@ -1,3 +1,7 @@
+import { getRandomStringWrapper } from "./__test__/pnp/pnp.mjs"
+
+console.log(getRandomStringWrapper());
+
 // our imports come from the -commonjs libs
 // import { SPFetchClient } from "@pnp/nodejs-commonjs";
 // import { sp } from "@pnp/sp-commonjs";
